@@ -10,9 +10,6 @@ This application provides a contact form where users can submit their informatio
 - Responsive contact form with client-side validation
 - Server-side validation and error handling
 - MongoDB database for persistent storage
-- CORS-enabled API for cross-origin requests
-- Secure password hashing and JWT authentication setup
-- Real-time form validation with error messages
 
 ---
 

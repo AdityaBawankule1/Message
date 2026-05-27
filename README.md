@@ -38,8 +38,6 @@ She Can Foundation (Full Stack)
 | Frontend | React 19, Vite, Tailwind CSS, Zod, React Hook Form |
 | Backend | Node.js, Express.js 5, Mongoose 9 |
 | Database | MongoDB |
-| Security | bcryptjs, JWT |
-| Dev Tools | Nodemon, ESLint |
 
 ---
 
@@ -58,7 +56,7 @@ Ensure you have the following installed on your local machine:
 ### Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/AdityaBawankule1/Message
 cd "She Can Foundation - Full Stack"
 ```
 
@@ -77,15 +75,7 @@ npm install
 3. Create a `.env` file in the `backend` folder with the following configuration:
 ```env
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/she-can-foundation
-NODE_ENV=development
-```
-
-**For MongoDB Atlas (Cloud Database):**
-```env
-PORT=5000
-MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/she-can-foundation?retryWrites=true&w=majority
-NODE_ENV=development
+MONGO_URI=<your key>
 ```
 
 4. Start the backend server:
@@ -138,17 +128,6 @@ Once both servers are running:
 - Frontend: Open `http://localhost:5173` in your browser
 - Backend API: `http://localhost:5000/api/contact`
 
-### Production Build
-
-**Frontend:**
-```bash
-cd frontend
-npm run build
-npm run preview
-```
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -182,51 +161,9 @@ npm run preview
 │   ├── vite.config.js               # Vite configuration
 │   ├── eslint.config.js             # ESLint configuration
 │   └── package.json
+├── Screenshots/
 ├── package.json                     # Root package configuration
 └── README.md                        # This file
-```
-
----
-
-## 📡 API Endpoints
-
-### Contact Form Submission
-
-**POST** `/api/contact`
-
-Submit a new contact form.
-
-**Request Body:**
-```json
-{
-  "name": "John Doe",
-  "email": "john@example.com",
-  "message": "This is my contact message..."
-}
-```
-
-**Success Response (201):**
-```json
-{
-  "success": true,
-  "message": "Form submitted successfully!",
-  "contact": {
-    "_id": "507f1f77bcf86cd799439011",
-    "name": "John Doe",
-    "email": "john@example.com",
-    "message": "This is my contact message...",
-    "createdAt": "2026-05-27T10:30:00Z"
-  }
-}
-```
-
-**Error Response (500):**
-```json
-{
-  "success": false,
-  "message": "Failed to save form data",
-  "error": "Error details"
-}
 ```
 
 ---
@@ -249,16 +186,6 @@ npm run build    # Build for production
 npm run lint     # Run ESLint
 npm run preview  # Preview production build
 ```
-
----
-
-## 🔐 Security Features
-
-- **Password Hashing:** bcryptjs for secure password storage
-- **JWT Authentication:** Ready for token-based authentication
-- **CORS:** Configured to allow cross-origin requests
-- **Input Validation:** Both client-side (Zod) and server-side validation
-- **Environment Variables:** Sensitive data stored in `.env` files
 
 ---
 
@@ -306,123 +233,8 @@ The frontend uses `http://[::1]:5000` (IPv6 loopback) for API calls. Modify in [
 
 ---
 
-## 🤝 Contributing
-
-1. Create a feature branch: `git checkout -b feature/your-feature`
-2. Commit your changes: `git commit -m "Add your feature"`
-3. Push to the branch: `git push origin feature/your-feature`
-4. Open a pull request
-
----
-
 ## 📄 License
 
 This project is licensed under the ISC License - see the LICENSE file for details.
 
 ---
-
-## 📞 Support
-
-For issues or questions, please open an issue in the repository or contact the development team.
-
----
-
-**Built with ❤️ for the She Can Foundation**
-
-4. Start the backend server:
-
-```bash
-   node server.js
-
-```
-
-### 2. Frontend Setup
-
-1. Open a new terminal window and navigate to the frontend directory:
-
-```bash
-   cd frontend
-
-```
-
-2. Install the dependencies:
-
-```bash
-   npm install
-
-```
-
-3. Start the Vite development server:
-
-```bash
-   npm run dev
-
-```
-
----
-
-## 🔌 API Endpoints
-
-### Contact Form Submission
-
-* **URL:** `/api/contact`
-* **Method:** `POST`
-* **Headers:** `Content-Type: application/json`
-* **Request Body:**
-
-```json
-  {
-    "name": "Jane Doe",
-    "email": "jane@example.com",
-    "message": "This is a test message over 20 characters."
-  }
-
-```
-
-* **Success Response (201 Created):**
-
-```json
-  {
-    "success": true,
-    "message": "Form submitted successfully!",
-    "contact": { ... }
-  }
-
-```
-
----
-
-## 💻 Troubleshooting & Known Gotchas (macOS Dual-Stack Networking)
-
-On modern macOS environments, system network configurations may map local requests differently over IPv4 vs IPv6, leading to `net::ERR_CONNECTION_REFUSED` errors even when the server is actively running.
-
-### Port Verification
-
-To confirm both the frontend and backend processes are running and see which addresses they have bound to, run:
-
-```bash
-lsof -i -P -n | grep LISTEN | grep node
-
-```
-
-### Addressing Connection Refused Bugs
-
-If your backend resolves to an IPv6 stack while the browser compiles over IPv4, update the frontend network target in `App.jsx` to utilize the explicit IPv6 loopback notation rather than `localhost`:
-
-```javascript
-// Resolve dual-stack alignment issues on Mac
-const response = await fetch("[http://[::1]:5000/api/contact](http://[::1]:5000/api/contact)", { ... });
-
-```
-
-```
-
-***
-
-<ElicitationsGroup message="What would you like to do next?">
-<Elicitation label="Draft environment configuration templates" query="Create a .env.example template file for both frontend and backend environments" />
-<Elicitation label="Generate API response mock tests" query="Create Postman collection JSON or curl command scripts to test the backend endpoints" />
-<Elicitation label="Add validation schema extensions" query="Add more robust validation or sanitization middleware to the backend routes" />
-</ElicitationsGroup>
-
-```

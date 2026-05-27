@@ -2,6 +2,23 @@
 
 A full-stack contact form application built to empower the community. This project features a responsive React frontend with form validation and a robust Node.js/Express backend integrated with MongoDB via Mongoose.
 
+## Screenshots
+
+### Screenshot 1
+![Screenshot 1](Screenshot 2026-05-27 at 23.31.02.png)
+
+### Screenshot 2
+![Screenshot 2](Screenshot 2026-05-27 at 23.31.02.png)
+
+### Screenshot 3
+![Screenshot 3](Screenshot 2026-05-27 at 23.31.02.png)
+
+### Screenshot 4
+![Screenshot 4](Screenshot 2026-05-27 at 23.31.02.png)
+
+### Screenshot 5
+![Screenshot 5](Screenshot 2026-05-27 at 23.31.02.png)
+
 ## 🎯 Project Overview
 
 This application provides a contact form where users can submit their information to the She Can Foundation. The submission includes validation on both the frontend and backend, ensuring data integrity and a smooth user experience.

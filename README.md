@@ -19,12 +19,10 @@ This application provides a contact form where users can submit their informatio
 She Can Foundation (Full Stack)
 ├── Frontend (React + Vite)
 │   ├── Contact Form Component
-│   ├── Form Validation (Zod)
 │   └── Tailwind CSS Styling
 ├── Backend (Node.js + Express)
 │   ├── REST API Endpoints
 │   ├── MongoDB Integration (Mongoose)
-│   └── Request Validation
 └── Database (MongoDB)
 ```
 
@@ -32,7 +30,7 @@ She Can Foundation (Full Stack)
 
 | Layer | Technology |
 |-------|-----------|
-| Frontend | React 19, Vite, Tailwind CSS, Zod, React Hook Form |
+| Frontend | React 19, Vite, Tailwind CSS |
 | Backend | Node.js, Express.js 5, Mongoose 9 |
 | Database | MongoDB |
 
@@ -42,7 +40,6 @@ She Can Foundation (Full Stack)
 
 Ensure you have the following installed on your local machine:
 - [Node.js](https://nodejs.org/) (v16 or higher recommended)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 - [MongoDB](https://www.mongodb.com/) (local instance or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) cloud database)
 - [Git](https://git-scm.com/)
 

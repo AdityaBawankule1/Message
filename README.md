@@ -4,19 +4,19 @@ A full-stack contact form application built to empower the community. This proje
 
 ## Screenshots
 
-### Screenshot 1
+### Home Page
 ![Screenshot 1](Screenshots/Screenshot%202026-05-27%20at%2023.31.02.png)
 
-### Screenshot 2
+### Home Page
 ![Screenshot 2](Screenshots/Screenshot%202026-05-27%20at%2023.31.13.png)
 
-### Screenshot 3
+### Enter the details
 ![Screenshot 3](Screenshots/Screenshot%202026-05-27%20at%2023.32.42.png)
 
-### Screenshot 4
+### Message Submitted
 ![Screenshot 4](Screenshots/Screenshot%202026-05-27%20at%2023.32.54.png)
 
-### Screenshot 5
+### Message stored in Database
 ![Screenshot 5](Screenshots/Screenshot%202026-05-27%20at%2023.33.41.png)
 
 ## 🎯 Project Overview

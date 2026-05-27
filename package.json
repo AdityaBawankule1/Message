@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@hookform/resolvers": "^5.4.0",
+    "@tailwindcss/vite": "^4.3.0",
+    "axios": "^1.16.1",
+    "react-hook-form": "^7.76.1",
+    "react-router-dom": "^7.15.1",
+    "tailwindcss": "^4.3.0",
+    "zod": "^4.4.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}

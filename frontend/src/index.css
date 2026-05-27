@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------- ROOT VARIABLES (SAFE) ---------------- */
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #ffffff;
+  --border: #e5e4e7;
+  --accent: #aa3bff;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+}
+
+/* ---------------- GLOBAL RESET (DO NOT BREAK TAILWIND) ---------------- */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* IMPORTANT: REMOVE CONFLICTING ROOT STYLING */
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------------- ROOT FIX ---------------- */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ---------------- HEADINGS (OPTIONAL SAFE STYLE) ---------------- */
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text-h);
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* ---------------- CODE (OPTIONAL) ---------------- */
+code {
+  font-family: var(--mono);
+  background: #f4f3ec;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
